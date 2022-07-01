@@ -30,10 +30,10 @@ Users should be able to:
 
 ### Screenshot
 #### Desktop view
-![Desktop view](/images/desktop-screenshot.png)
+![Desktop view](./main/images/desktop-screenshot.png)
 
 #### Mobile view
-![Moboile view](/images/mobile-screenshot.png)
+![Moboile view](./main/images/mobile-screenshot.png)
 
 ### Links
 
