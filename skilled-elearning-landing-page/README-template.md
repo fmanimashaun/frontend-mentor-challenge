@@ -35,7 +35,7 @@ Users should be able to:
 
 
 #### Mobile view
-![Mobile view](main/img/mobile-screenshot.png)
+![Mobile view](main/assets/img/mobile-screenshot.png)
 
 
 ### Links
