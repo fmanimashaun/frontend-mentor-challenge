@@ -169,7 +169,6 @@ header {
 }
 
 .featured-courses .course .course-content {
-    outline: 2px solid red;
     border-radius: var(--featured-course-border-radius);
     box-shadow: var(--featured-course-box-shadow);
     padding: 3.5rem 1.8125rem 2rem 1.75rem;
@@ -381,7 +380,6 @@ footer {
         padding-inline-end: 5.2vw;
         padding-block-end: 8.75rem;
         column-gap: 1.875rem;
-        border: 2px solid red;
     }
 
     .featured-courses .course {
