@@ -35,13 +35,13 @@ Users should be able to:
 
 
 #### Mobile view
-![Moboile view](./main/img/mobile-screenshot.png)
+![Mobile view](main/img/mobile-screenshot.png)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/fmanimashaun/frontend-mentor-challenge/tree/main/skilled-elearning-landing-page)
-- Live Site URL: [Add live site URL here](https://fmanimashaun.github.io/frontend-mentor-challenge/skilled-elearning-landing-page/main/index.html)
+- [Solution URL](https://github.com/fmanimashaun/frontend-mentor-challenge/tree/main/skilled-elearning-landing-page)
+- [Live Site URL](https://fmanimashaun.github.io/frontend-mentor-challenge/skilled-elearning-landing-page/main/index.html)
 
 ## My process
 
