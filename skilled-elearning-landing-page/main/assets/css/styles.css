@@ -88,7 +88,7 @@ header {
     background-color: var(--primary-color-hover-state);
 }
 
-/*Heroo Section*/
+/*Hero Section*/
 .hero-section {
     display: flex;
     flex-flow: column nowrap;
@@ -96,22 +96,22 @@ header {
     margin-inline-end: 1rem;
 }
 
-.left-col,
-.right-col {
+.hero-section .left-col,
+.hero-section .right-col {
     width: 100%;
 }
 
-.right-col {
+.hero-section .right-col {
     margin: 0;
 }
 
 
 /*Hero left column section*/
-.left-col {
+.hero-section .left-col {
     margin-block-end: 2.875rem;
 }
 
-.left-col h1 {
+.hero-section .left-col h1 {
     font-size: var(--heading-L-font-size);
     line-height: var(--heading-L-line-height);
     font-weight: var(--extra-bold-font);
@@ -119,7 +119,7 @@ header {
     margin-block-end: 1.625rem;
 }
 
-.left-col p {
+.hero-section .left-col p {
     font-size: var(--body-S-font-size);
     line-height: var(--body-S-line-height);
     font-weight: var(--medium-font);
@@ -127,7 +127,7 @@ header {
     margin-block-end: 1.5rem;
 }
 
-.left-col .hero-btn a {
+.hero-section .left-col .hero-btn a {
     display: inline-block;
     padding: 0.9375rem 2.3125rem 0.9375rem 2.375rem;
     background: var(--primary-gradient-color);
@@ -137,19 +137,18 @@ header {
     color: var(--white-color);
 }
 
-.left-col .hero-btn a:hover {
+.hero-section .left-col .hero-btn a:hover {
     background: var(--primary-gradient-color-hover-state);
 }
 
 /*Hero right column section*/
-
-.right-col img.mobile-view {
+.hero-section .right-col img {
     width: 100%;
     height: auto;
 }
 
-.right-col img.desktop-view,
-.right-col img.tablet-view {
+.hero-section .right-col img.desktop-view,
+.hero-section .right-col img.tablet-view {
     display: none;
 }
 
@@ -262,17 +261,53 @@ footer {
 
 /*Tablet view*/
 @media only screen and (min-width: 768px) {
+
     /*Header section*/
     header {
         margin: 24px 5.2vw 6.1875rem 5.2vw;
     }
 
-    /*Heroo Section*/
+    /*Hero Section*/
     .hero-section {
         flex-flow: row nowrap;
+        justify-content: space-between;
         margin-inline-start: 5.2vw;
         margin-inline-end: 0;
+        column-gap: 2.0819rem;
     }
+
+    /*Hero left Section*/
+    .hero-section .left-col {
+        border: 1px solid red;
+        flex-basis: 398px;
+        flex-grow: 1;
+        max-width: 457px;
+    }
+
+    /*Hero rigght Section*/
+    .hero-section .right-col {
+        border: 1px solid red;
+        flex-basis: 297.69px;
+        flex-grow: 1;
+        max-width: 536px;
+    }
+
+    /*Hero right column section*/
+    .hero-section .right-col img. {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-section .right-col img.tablet-view {
+        display: block;
+    }
+
+    .hero-section .right-col img.desktop-view,
+    .hero-section .right-col img.mobile-view {
+        display: none;
+    }
+
+
 
     /*Footer section*/
     footer {
@@ -282,6 +317,7 @@ footer {
 
 /*Desktop view*/
 @media only screen and (min-width: 1024px) {
+
     /*Header section*/
     header {
         margin: 24px 10.4vw 10.75rem 10.4vw;
@@ -293,6 +329,23 @@ footer {
         margin-inline-start: 10.4vw;
         margin-inline-end: 0;
     }
+
+    /*Hero right column section*/
+    .hero-section .right-col img. {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-section .right-col img.desktop-view {
+        display: block;
+    }
+
+    .hero-section .right-col img.tablet-view,
+    .hero-section .right-col img.mobile-view {
+        display: none;
+    }
+
+
 
     /*Footer section*/
     footer {
