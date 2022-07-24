@@ -269,48 +269,49 @@ footer {
 
     /*Header section*/
     header {
-        margin: 24px 5.2vw 6.1875rem 5.2vw;
+        margin: 0 5.2vw 0 5.2vw;
+        padding: 1.5rem 0 0 0;
+        border: 1px solid red;
     }
 
     /*Hero Section*/
+    /*Hero right column section*/
     .hero-section {
+        border: 1px solid red;
+        display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
-        margin-inline-start: 5.2vw;
-        margin-inline-end: 0;
+        margin: 6.1875rem 0 11.625rem 5.2vw;
         column-gap: 2.0819rem;
     }
 
-    /*Hero left Section*/
     .hero-section .left-col {
-        border: 1px solid red;
-        margin-block-end: 11.625rem;
+        margin-block-end: 0;
         flex-basis: 398px;
-        flex-grow: 1;
         max-width: 457px;
     }
 
-    /*Hero rigght Section*/
     .hero-section .right-col {
+        flex-basis: 297.69px;
         position: relative;
         border: 1px solid red;
-        flex-basis: 297.69px;
-        flex-grow: 1;
-        max-width: 536px;
     }
 
-    /*Hero right column section*/
+
     .hero-section .right-col img.tablet-view {
-       position: absolute;
-
+        border: 1px solid black;
+        display: block;
+        position: absolute;
+        width: 640.71px;
+        height: auto;
+        left: -97px;
+        bottom: -163.133px;
     }
 
-
-    .hero-section .right-col img.desktop-view,
-    .hero-section .right-col img.mobile-view {
+    .right-col img.desktop-view,
+    .right-col img.mobile-view {
         display: none;
     }
-
 
 
     /*Footer section*/
@@ -324,47 +325,18 @@ footer {
 
     /*Header section*/
     header {
-        margin: 1.5rem 10.4vw 10.75rem 10.4vw;
+        margin: 0 10.4vw 0 10.4vw;
+        padding: 1.5rem 0 0 0;
+        border: 1px solid red;
     }
 
-    /*Heroo Section*/
+    /*Hero Section*/
+    /*Hero right column section*/
     .hero-section {
-        flex-flow: row nowrap;
-        margin-inline-start: 10.4vw;
-        margin-inline-end: 0;
+        margin: 10.75rem 0 14.125rem 10.4vw;
     }
 
-    .hero-section .left-col {
-        margin-block-end: 226px;
-    }
-
-    /*Hero right column section*/
-    .hero-section .right-col img {
-        width: 100%;
-        height: auto;
-    }
-
-    /*Hero right column section*/
-    .hero-section .right-col img.desktop-view {
-        display: block;
-        position: absolute;
-        border: 1px solid black;
-        width: 69.065vw;
-        max-width: 991.63px;
-        height: auto;
-        object-fit: fill;
-        object-position: left -45.31px bottom 7.6875rem;
-        inset-block-start: -19.843vw;
-        inset-inline-end: -27.2386vw;
-
-    }
-
-
-    .hero-section .right-col img.tablet-view,
-    .hero-section .right-col img.mobile-view {
-        display: none;
-    }
-
+    
 
 
     /*Footer section*/
@@ -374,16 +346,3 @@ footer {
 
 }
 
-@media only screen and (min-width: 1440px) {
-    header {
-        margin: 1.5rem 10.4vw 10.75rem 10.4vw;
-    }
-   
-
-    .hero-section .right-col img.desktop-view {
-        object-position: left -45.31px bottom 7.6875rem;
-        inset-block-start: -285.733px;
-        inset-inline-end: -359px;
-
-    }
-}
