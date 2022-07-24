@@ -60,7 +60,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    margin: 1.375rem 1rem 2.8125rem 1rem;
+    margin: 1rem 1rem 2.375rem 1rem;
 }
 
 .logo-header {
@@ -71,6 +71,8 @@ header {
 }
 
 .header-btn a {
+    position: relative;
+    z-index: 1000;
     padding: 0.5625rem 1.5rem 0.6875rem 1.5rem;
     background-color: var(--primary-color);
     color: var(--white-color);
@@ -86,6 +88,7 @@ header {
     background-color: var(--primary-color-hover-state);
 }
 
+/*Heroo Section*/
 .hero-section {
     display: flex;
     flex-flow: column nowrap;
@@ -185,6 +188,7 @@ header {
     font-size: var(--featured-heading-font-size);
     line-height: var(--featured-heading-line-height);
     font-weight: var(--extra-bold-font);
+    padding: 0 1.8125rem 2rem 1.75rem;
 }
 
 
@@ -258,12 +262,41 @@ footer {
 
 /*Tablet view*/
 @media only screen and (min-width: 768px) {
+    /*Header section*/
+    header {
+        margin: 24px 5.2vw 6.1875rem 5.2vw;
+    }
 
-   
+    /*Heroo Section*/
+    .hero-section {
+        flex-flow: row nowrap;
+        margin-inline-start: 5.2vw;
+        margin-inline-end: 0;
+    }
+
+    /*Footer section*/
+    footer {
+        padding: 2.25rem 5.2vw;
+    }
 }
 
 /*Desktop view*/
 @media only screen and (min-width: 1024px) {
+    /*Header section*/
+    header {
+        margin: 24px 10.4vw 10.75rem 10.4vw;
+    }
 
-   
+    /*Heroo Section*/
+    .hero-section {
+        flex-flow: row nowrap;
+        margin-inline-start: 10.4vw;
+        margin-inline-end: 0;
+    }
+
+    /*Footer section*/
+    footer {
+        padding: 2rem 10.4vw;
+    }
+
 }
