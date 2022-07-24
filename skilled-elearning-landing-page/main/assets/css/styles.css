@@ -262,6 +262,11 @@ footer {
 /*Tablet view*/
 @media only screen and (min-width: 768px) {
 
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
     /*Header section*/
     header {
         margin: 24px 5.2vw 6.1875rem 5.2vw;
@@ -279,6 +284,7 @@ footer {
     /*Hero left Section*/
     .hero-section .left-col {
         border: 1px solid red;
+        margin-block-end: 11.625rem;
         flex-basis: 398px;
         flex-grow: 1;
         max-width: 457px;
@@ -286,6 +292,7 @@ footer {
 
     /*Hero rigght Section*/
     .hero-section .right-col {
+        position: relative;
         border: 1px solid red;
         flex-basis: 297.69px;
         flex-grow: 1;
@@ -293,14 +300,11 @@ footer {
     }
 
     /*Hero right column section*/
-    .hero-section .right-col img. {
-        width: 100%;
-        height: auto;
+    .hero-section .right-col img.tablet-view {
+       position: absolute;
+
     }
 
-    .hero-section .right-col img.tablet-view {
-        display: block;
-    }
 
     .hero-section .right-col img.desktop-view,
     .hero-section .right-col img.mobile-view {
@@ -320,7 +324,7 @@ footer {
 
     /*Header section*/
     header {
-        margin: 24px 10.4vw 10.75rem 10.4vw;
+        margin: 1.5rem 10.4vw 10.75rem 10.4vw;
     }
 
     /*Heroo Section*/
@@ -330,15 +334,31 @@ footer {
         margin-inline-end: 0;
     }
 
+    .hero-section .left-col {
+        margin-block-end: 226px;
+    }
+
     /*Hero right column section*/
-    .hero-section .right-col img. {
+    .hero-section .right-col img {
         width: 100%;
         height: auto;
     }
 
+    /*Hero right column section*/
     .hero-section .right-col img.desktop-view {
         display: block;
+        position: absolute;
+        border: 1px solid black;
+        width: 69.065vw;
+        max-width: 991.63px;
+        height: auto;
+        object-fit: fill;
+        object-position: left -45.31px bottom 7.6875rem;
+        inset-block-start: -19.843vw;
+        inset-inline-end: -27.2386vw;
+
     }
+
 
     .hero-section .right-col img.tablet-view,
     .hero-section .right-col img.mobile-view {
@@ -352,4 +372,18 @@ footer {
         padding: 2rem 10.4vw;
     }
 
+}
+
+@media only screen and (min-width: 1440px) {
+    header {
+        margin: 1.5rem 10.4vw 10.75rem 10.4vw;
+    }
+   
+
+    .hero-section .right-col img.desktop-view {
+        object-position: left -45.31px bottom 7.6875rem;
+        inset-block-start: -285.733px;
+        inset-inline-end: -359px;
+
+    }
 }
