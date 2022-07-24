@@ -271,13 +271,11 @@ footer {
     header {
         margin: 0 5.2vw 0 5.2vw;
         padding: 1.5rem 0 0 0;
-        border: 1px solid red;
     }
 
     /*Hero Section*/
     /*Hero right column section*/
     .hero-section {
-        border: 1px solid red;
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
@@ -294,12 +292,10 @@ footer {
     .hero-section .right-col {
         flex-basis: 297.69px;
         position: relative;
-        border: 1px solid red;
     }
 
 
     .hero-section .right-col img.tablet-view {
-        border: 1px solid black;
         display: block;
         position: absolute;
         width: 640.71px;
@@ -308,8 +304,8 @@ footer {
         bottom: -163.133px;
     }
 
-    .right-col img.desktop-view,
-    .right-col img.mobile-view {
+    .hero-section .right-col img.desktop-view,
+    .hero-section .right-col img.mobile-view {
         display: none;
     }
 
@@ -327,7 +323,6 @@ footer {
     header {
         margin: 0 10.4vw 0 10.4vw;
         padding: 1.5rem 0 0 0;
-        border: 1px solid red;
     }
 
     /*Hero Section*/
@@ -336,7 +331,24 @@ footer {
         margin: 10.75rem 0 14.125rem 10.4vw;
     }
 
-    
+    .hero-section .right-col {
+        flex-basis:536px;
+        position: relative;
+    }
+
+
+    .hero-section .right-col img.desktop-view {
+        display: block;
+        position: absolute;
+        width: 991.63px;
+        height: auto;
+        left: -166px;
+        bottom: -225.1333px;
+    }
+    .hero-section .right-col img.tablet-view,
+    .hero-section .right-col img.mobile-view {
+        display: none;
+    }
 
 
     /*Footer section*/
