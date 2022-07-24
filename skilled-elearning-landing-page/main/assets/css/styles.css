@@ -71,6 +71,8 @@ header {
 }
 
 .header-btn a {
+    position: relative;
+    z-index: 1000;
     padding: 0.5625rem 1.5rem 0.6875rem 1.5rem;
     background-color: var(--primary-color);
     color: var(--white-color);
