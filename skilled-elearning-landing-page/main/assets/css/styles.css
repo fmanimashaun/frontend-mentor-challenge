@@ -279,7 +279,7 @@ footer {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
-        margin: 6.1875rem 0 11.625rem 5.2vw;
+        margin: 6.1875rem 0 24.18vw 5.2vw;
         column-gap: 2.0819rem;
     }
 
@@ -292,22 +292,21 @@ footer {
     }
 
     .hero-section .right-col {
-        flex-basis: auto;
-        max-width: 536px;
+        flex-basis: 297.69px;
         position: relative;
-        border: 1px solid red;
     }
-
 
     .hero-section .right-col img.tablet-view {
         display: block;
+    }
+
+    .hero-section .right-col img {
+        display: block;
         position: absolute;
-        width: 150%;
-        max-width: 640.72px;
+        width: 640.72px;
         height: auto;
-        left: 0%;
-        bottom: -5%;
-        border: 1px solid black;
+        left: -98px;
+        bottom: -171.13px;
     }
 
     .hero-section .right-col img.desktop-view,
@@ -334,24 +333,40 @@ footer {
     /*Hero Section*/
     /*Hero right column section*/
     .hero-section {
-        margin: 10.75rem 0 14.125rem 10.4vw;
+        margin: 11.876vw 0 14.125rem 10.4vw;
+    }
+
+    .hero-section .left-col h1 {
+        font-size: var(--heading-XL-font-size);
+        line-height: var(--heading-XL-line-height);
+        margin-block-end: 1.8125rem;
+    }
+    
+    .hero-section .left-col p {
+        font-size: var(--body-M-font-size);
+        line-height: var(--body-M-line-height);
+        font-weight: var(--medium-font);
+        color: var(--primary-text-color);
+        margin-block-end: 2.5rem;
+    }
+
+    .hero-section .left-col {
+        flex-basis: 576px;
     }
 
     .hero-section .right-col {
-        position: relative;
-        border: 1px solid red;
+        flex-basis: 536px;
+        
     }
 
-
     .hero-section .right-col img.desktop-view {
-        border: 1px solid black;
         display: block;
-        position: absolute;
-        width: 705.16px;
+    }
+    .hero-section .right-col img {
+        width: calc(640.72px + 27.7645vw);
         max-width: 991.63px;
-        height: auto;
-        left: -166px;
-        bottom: -225.1333px;
+        left: -152px;
+        bottom: -171.13px;
     }
     .hero-section .right-col img.tablet-view,
     .hero-section .right-col img.mobile-view {
